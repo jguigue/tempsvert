@@ -21,10 +21,10 @@ export default function FooterOne() {
             </Link>
           </div>
           <div className="footer-one__header__newsletter">
-            <span>Subscribe Newletter:</span>
+            <span>Abonnez vous à la Newsletter:</span>
             <SubcribeEmail
-              mailchimpUrl="https://jster.us7.list-manage.com/subscribe/post?u=ed40c0084a0c5ba31b3365d65&id=ec6f32bf5e"
-              placeholder="Enter your email"
+              mailchimpUrl=""
+              placeholder="Entrez votre email"
               btnContent={<i className="fas fa-paper-plane" />}
               className="footer-one-newsletter"
             />
@@ -37,18 +37,15 @@ export default function FooterOne() {
           <div className="row">
             <div className="col-12 col-md-6 col-lg-4">
               <div className="footer__section -info">
-                <h5 className="footer-title">Contact info</h5>
+                <h5 className="footer-title">Contact</h5>
                 <p>
-                  Address: <span>{footerInfomation.address}</span>
+                  Addresse: <span>{footerInfomation.address}</span>
                 </p>
                 <p>
-                  Phone: <span>{footerInfomation.phone}</span>
+                  Téléphone: <span>{footerInfomation.phone}</span>
                 </p>
                 <p>
                   Email: <span>{footerInfomation.email}</span>
-                </p>
-                <p>
-                  Opentime: <span>{footerInfomation.open}</span>
                 </p>
               </div>
             </div>
@@ -56,7 +53,7 @@ export default function FooterOne() {
               <div className="footer__section -links">
                 <div className="row">
                   <div className="col-12 col-sm-6">
-                    <h5 className="footer-title">Account</h5>
+                    <h5 className="footer-title">Compte</h5>
                     <ul>
                       {footerLinks.accountLinks.map((link, index) => (
                         <li key={index}>
@@ -68,7 +65,7 @@ export default function FooterOne() {
                     </ul>
                   </div>
                   <div className="col-12 col-sm-6">
-                    <h5 className="footer-title">Infomation</h5>
+                    <h5 className="footer-title">Infomations</h5>
                     <ul>
                       {footerLinks.informationLinks.map((link, index) => (
                         <li key={index}>
@@ -84,10 +81,9 @@ export default function FooterOne() {
             </div>
             <div className="col-12 col-lg-4">
               <div className="footer__section -payment">
-                <h5 className="footer-title">Payment methods</h5>
+                <h5 className="footer-title">Moyens de paiements autorisés</h5>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                  gravida facilisis.{" "}
+                  Le Temps Vert accepte Paypal, les cartes bleues Visa, MasterCard et Cirrus.{" "}
                 </p>
                 <div className="payment-methods">
                   <img
@@ -106,7 +102,7 @@ export default function FooterOne() {
       <div className="footer-one__footer">
         <div className="container">
           <div className="footer-one__footer__wrapper">
-            <p>© Copyright 2020 Beauty</p>
+            <p>© Copyright 2021 Temps Verts</p>
             <ul>
               {footerLinks.creditLinks.map((link, index) => (
                 <li key={index}>

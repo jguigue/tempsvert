@@ -8,7 +8,6 @@ import LayoutOne from "../components/Layout/LayoutOne";
 import productData from "../data/products.json";
 import ShopProducts from "../components/Shop/ShopProducts";
 import ShopHeader from "../components/Shop/ShopHeader";
-import InstagramTwo from "../components/Sections/Instagram/InstagramTwo";
 import ShopSidebar from "../components/Shop/ShopSidebar";
 
 export default function () {
@@ -74,7 +73,6 @@ export default function () {
           </div>
         </div>
       </div>
-      <InstagramTwo />
     </LayoutOne>
   );
 }

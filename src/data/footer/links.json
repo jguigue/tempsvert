@@ -1,21 +1,18 @@
 {
   "accountLinks": [
-    { "name": "My account", "to": "#" },
-    { "name": "Wishlist", "to": "/shop/wishlist" },
-    { "name": "Cart", "to": "/shop/cart" },
-    { "name": "Shop", "to": "/shop/fullwidth-4col" },
-    { "name": "Checkout", "to": "/shop/checkout" }
+    { "name": "Favoris", "to": "/shop/wishlist" },
+    { "name": "Panier", "to": "/shop/cart" },
+    { "name": "Boutique", "to": "/shop/fullwidth-4col" },
+    { "name": "Paiement", "to": "/shop/checkout" }
   ],
   "informationLinks": [
-    { "name": "About us", "to": "/other/about" },
-    { "name": "Careers", "to": "/other/contact" },
-    { "name": "Delivery Information", "to": "/other/contact" },
-    { "name": "Privacy Policy", "to": "/other/contact" },
-    { "name": "Terms & Condition", "to": "/other/contact" }
+    { "name": "À propos", "to": "/other/about" },
+    { "name": "Contact", "to": "/other/contact" },
+    { "name": "Mentions légales", "to": "/other/contact" },
+    { "name": "CGV", "to": "/other/contact" }
   ],
   "creditLinks": [
-    { "name": "Privacy Policy", "to": "/other/contact" },
-    { "name": "Terms & Condition", "to": "/other/contact" },
-    { "name": "Site map", "to": "/other/contact" }
+    { "name": "Mentions Légales", "to": "/other/contact" },
+    { "name": "CGV", "to": "/other/contact" }
   ]
 }

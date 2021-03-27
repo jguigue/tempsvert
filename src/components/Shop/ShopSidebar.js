@@ -24,7 +24,7 @@ export default function ShopSidebar() {
       <div className="shop-sidebar__content">
         <div className="shop-sidebar__section -categories">
           <SectionTitleOne className="-medium" spaceBottom={30 / 16 + "em"}>
-            Categories
+            Type de montre
           </SectionTitleOne>
           <ul>
             {shop.CATEGORISE.map((item, index) => (
@@ -50,10 +50,10 @@ export default function ShopSidebar() {
         </div>
         <div className="shop-sidebar__section -refine">
           <SectionTitleOne className="-medium" spaceBottom={30 / 16 + "em"}>
-            Refine Search
+            Autres critères
           </SectionTitleOne>
           <div className="shop-sidebar__section__item">
-            <h5>Brand</h5>
+            <h5>Collection</h5>
             <ul>
               {shop.BRANDS.map((item, index) => (
                 <li key={index}>
@@ -79,7 +79,7 @@ export default function ShopSidebar() {
             </ul>
           </div>
           <div className="shop-sidebar__section__item">
-            <h5>Price</h5>
+            <h5>Prix</h5>
             <ul>
               {shop.PRICE_POINTS.map((item, index) => {
                 let nextVal = shop.PRICE_POINTS[index + 1];

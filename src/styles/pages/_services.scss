@@ -57,6 +57,7 @@
         &:first-child {
           top: 0;
           right: 0;
+          width: 80%;
           @include mq(md) {
             max-width: 80%;
           }

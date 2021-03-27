@@ -1,26 +1,24 @@
 [
   {
-    "title": "Body treatment",
+    "title": "Respectueux de l'environnement",
     "description": "Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis pendisse ultrices gravida. Risus commodo viverra lacus vel facilisis.",
-    "bigImgSrc": "/assets/images/contact/1_1.png",
-    "smallImgSrc": "/assets/images/contact/1.png"
+    "bigImgSrc": "/assets/images/valeurs/environnement/2.png",
+    "smallImgSrc": "/assets/images/valeurs/environnement/1.png",
+    "list": ["Un arbre coupé une fois vieux", "Un procédé respectueux de l'environnement", "Aucune pertes dans le cycle de vie", "1 arbre coupé = 1 arbre planté"]
   },
   {
-    "title": "Professinal makeup",
+    "title": "Made in France",
     "description": "Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis pendisse ultrices gravida. Risus commodo viverra lacus vel facilisis.",
-    "bigImgSrc": "/assets/images/contact/2_1.png",
-    "smallImgSrc": "/assets/images/contact/2.png"
+    "bigImgSrc": "/assets/images/valeurs/madeinfrance/2.png",
+    "smallImgSrc": "/assets/images/valeurs/madeinfrance/1.png",
+    "list": ["Une production à Montanbourg", "Des salariés français", "10% d'employés en situation de handicap", "Du boix 100% français"]
+    
   },
   {
-    "title": "Maincure & pedicure",
+    "title": "Un service qualité au poil",
     "description": "Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis pendisse ultrices gravida. Risus commodo viverra lacus vel facilisis.",
-    "bigImgSrc": "/assets/images/contact/3_1.png",
-    "smallImgSrc": "/assets/images/contact/3.png"
-  },
-  {
-    "title": "Hair cut & Coloring",
-    "description": "Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis pendisse ultrices gravida. Risus commodo viverra lacus vel facilisis.",
-    "bigImgSrc": "/assets/images/contact/4_1.png",
-    "smallImgSrc": "/assets/images/contact/4.png"
+    "bigImgSrc": "/assets/images/valeurs/servicequalite/2.png",
+    "smallImgSrc": "/assets/images/valeurs/servicequalite/1.png",
+    "list": ["Quatres personnes pour répondre à vos questions", "Des retours gratuits", "Satisfait ou remboursé", "Garantie 3 années sur la totalité des produits"]
   }
 ]

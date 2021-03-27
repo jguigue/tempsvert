@@ -1,10 +1,10 @@
 import React, { useRef, useEffect } from "react";
 import Parallax from "parallax-js";
-import Button from "../../Control/Button";
 import classNames from "classnames";
 
 export default function ServiceItem(props) {
-  const { bigImgSrc, smallImgSrc, description, order, reverse } = props;
+  const { bigImgSrc, smallImgSrc, description, title, list, order, reverse } = props;
+  const liste = props.list;
   const bg1 = useRef(null);
   const bg2 = useRef(null);
   useEffect(() => {
@@ -15,6 +15,7 @@ export default function ServiceItem(props) {
       parallax2.disable();
     };
   }, []);
+  console.log(liste)
   const renderListStyle = (content) => {
     if (reverse) {
       return (
@@ -77,30 +78,20 @@ export default function ServiceItem(props) {
               <div className="services__item__order">
                 {reverse ? <h3>.{order}</h3> : <h3>{order}.</h3>}
               </div>
-              <h2 className="services__item__title">Body treatment</h2>
+              <h2 className="services__item__title">{title}</h2>
               <p className="services__item__description">
-                Dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Quis
-                pendisse ultrices gravida. Risus commodo viverra lacus vel
-                facilisis.
+                {description}
               </p>
-              <ul>
-                <li>
-                  {renderListStyle("Lorem ipsum dolor sit amet, consectetur.")}
-                </li>
-                <li>
-                  {renderListStyle("Adipiscing elit, sed do eiusmod tempor.")}
-                </li>
-                <li>
-                  {renderListStyle(
-                    "Incididunt ut labore et dolore magna aliqua."
-                  )}
-                </li>
-                <li>
-                  {renderListStyle("Quis ipsum suspendisse ultrices gravida.")}
-                </li>
-              </ul>
-              <Button color="white" action="#" content="Read more" />
+              <div className="post-content__footer__tags">
+                <ul>
+                  {liste.map((texte) => (
+                     <li>
+                       <i className="fas fa-check pr-2" ></i>
+                       <span>{texte}</span>
+                     </li>
+                   ))}
+                 </ul>
+              </div>
             </div>
           </div>
         </div>
