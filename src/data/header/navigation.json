@@ -1,0 +1,13 @@
+[
+  {
+    "title": "Accueil",
+    "to": "../",
+    "disableSubmenu": true
+  },
+  { "title": "A propos", "to": "/about" },
+  {
+    "title": "Boutique",
+    "to": "/shop"
+  },
+  { "title": "Contact", "to": "/contact" }
+]

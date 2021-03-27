@@ -1,0 +1,19 @@
+[
+  {
+    "title": { "main": "Une montre qui respecte la nature" },
+    "subTitle": "Une ode à la nature",
+    "image": "/assets/images/bunny.mp4",
+    "mp4": "/assets/images/videos/nature.mp4",
+    "webm": "/assets/images/videos/nature.webm",
+    "isVideo" : "yes",
+    "btn": {
+      "content": "Découvrir nos montres",
+      "color": "red"
+    },
+    "animationClass": {
+      "title": "slider-one-title",
+      "subtitle": "slider-one-subtitle",
+      "button": "slider-one-button"
+    }
+  }
+]
