@@ -11,7 +11,7 @@ function CartItem(props) {
   const removeProductHandle = (e) => {
     e.preventDefault();
     dispatch(removeFromCart(cartId));
-    toast.error("Product removed from card");
+    toast.error("Montre supprimée du panier");
   };
   return (
     <div className="cart-item">
@@ -27,7 +27,7 @@ function CartItem(props) {
         </Link>
         <h5>{formatCurrency(price)}</h5>
         <p>
-          Quantity: <span>{quantity}</span>
+          Quantité: <span>{quantity}</span>
         </p>
       </div>
       <a className="cart-item__remove" href="#" onClick={removeProductHandle}>

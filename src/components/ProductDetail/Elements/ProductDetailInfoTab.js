@@ -10,8 +10,8 @@ export default function ProductDetailInfoTab({ onReviewSubmit }) {
       <Tabs className="product-detail__tab__content">
         <TabList className="tab__content__header">
           <Tab>Description</Tab>
-          <Tab>Shipping & Returns</Tab>
-          <Tab>Reviews ( 03 )</Tab>
+          <Tab>Livraison & Retours</Tab>
+          <Tab>Avis ( 03 )</Tab>
         </TabList>
 
         <TabPanel className="tab__content__item -description">
@@ -24,46 +24,43 @@ export default function ProductDetailInfoTab({ onReviewSubmit }) {
         </TabPanel>
         <TabPanel className="tab__content__item -ship">
           <h5>
-            <span>Ship to </span>New York
+            <span>Livraison vers la </span>France
           </h5>
           <ul>
             <li>
-              Standard Shipping on order over 0kg - 5kg. <span>+10.00</span>
+              Livraison standard 0kg - 5kg. <span>+5.00€</span>
             </li>
             <li>
-              Heavy Goods Shipping on oder over 5kg-10kg . <span>+20.00</span>
+              Livraison lourde 5kg-10kg . <span>+10.00€</span>
             </li>
           </ul>
-          <h5>Delivery & returns</h5>
+          <h5>Politique de retours</h5>
           <p>
-            We diliver to over 100 countries around the word. For full details
-            of the delivery options we offer, please view our Delivery
-            information.
+            Les retours sont gratuits dans la limite de votre garantie et de votre délai de retractation.
           </p>
         </TabPanel>
         <TabPanel className="tab__content__item -review">
           <Review
             avatar="https://i1.wp.com/metro.co.uk/wp-content/uploads/2020/03/GettyImages-1211127989.jpg?quality=90&strip=all&zoom=1&resize=644%2C416&ssl=1"
             name="Zachary Wade"
-            publicDate="Mar 17, 2020"
+            publicDate="Mar 17, 2021"
             rate={4}
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore.
+            Superbe montre, j'adore vraiment !
           </Review>
           <form onSubmit={handleSubmit(onReviewSubmit)}>
-            <h5>Write a review</h5>
+            <h5>Écrire un avis</h5>
             <div className="row">
               <div className="col-12 col-md-6">
                 <div className="input-validator">
                   <input
                     type="text"
                     name="name"
-                    placeholder="Name"
+                    placeholder="Nom"
                     ref={register({ required: true })}
                   />
                   {errors.name && (
-                    <span className="input-error">Please provide a name</span>
+                    <span className="input-error">Merci de fournir un nom</span>
                   )}
                 </div>
               </div>
@@ -76,7 +73,7 @@ export default function ProductDetailInfoTab({ onReviewSubmit }) {
                     ref={register({ required: true })}
                   />
                   {errors.email && (
-                    <span className="input-error">Please provide an email</span>
+                    <span className="input-error">Merci de fournir un email</span>
                   )}
                 </div>
               </div>
@@ -92,7 +89,7 @@ export default function ProductDetailInfoTab({ onReviewSubmit }) {
                 {errors.message && <span className="input-error"></span>}
               </div>
               <div className="col-12">
-                <button className="btn -dark">Write a review</button>
+                <button className="btn -dark">Laisser un commentaire</button>
               </div>
             </div>
           </form>

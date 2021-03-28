@@ -27,7 +27,7 @@ export default function DaleOfWeekTwo() {
                     process.env.PUBLIC_URL +
                     "/assets/images/deal_of_week/DOWTwo/1.png"
                   }
-                  alt="Dale of the week image"
+                  alt="Deal de la semaine"
                 />
               </div>
             </div>
@@ -35,7 +35,7 @@ export default function DaleOfWeekTwo() {
           <div className="col-12 col-lg-6 order-lg-1">
             <div className="dow-two__content">
               <h5>Offre de pâques !</h5>
-              <h3>Gamme Fusain</h3>
+              <h3>Montre Marula</h3>
               <div className="special-price">
                 <p>159.99€</p>
                 <span>300.00€</span>
@@ -63,7 +63,7 @@ export default function DaleOfWeekTwo() {
                 }}
               />
               <Button
-                action={process.env.PUBLIC_URL + "#"}
+                action={process.env.PUBLIC_URL + "/shop/product/montre-marula"}
                 color="white "
                 content="Acheter maintenant"
               />

@@ -44,7 +44,7 @@ function Product({ data, type, className }) {
     let productItem = checkProductInCart(cartState, data.id);
     if (!productItem && data.quantity > 0) {
       dispatch(addToCart(data, 1, otherColor && otherColor.color));
-      return toast.success("Product added to cart !");
+      return toast.success("Montre ajoutée au panier !");
     }
   };
   const addToWishlistHandle = (e) => {
@@ -53,9 +53,9 @@ function Product({ data, type, className }) {
     dispatch(addToWishlist(data));
     toast.dismiss();
     if (!wishlistItem) {
-      return toast.success("Product added to wishlist !");
+      return toast.success("Montre ajoutée aux favoris !");
     } else {
-      return toast.error("Product removed from wishlist !");
+      return toast.error("Montre supprimée des favoris !");
     }
   };
 
@@ -100,7 +100,7 @@ function Product({ data, type, className }) {
                 ></Button>
               </div>
               <ReactTooltip id="cartIcon" type="dark" effect="solid">
-                <span>Add to Cart</span>
+                <span>Ajouter au panier</span>
               </ReactTooltip>
               <div className="product-btn" data-tip data-for="qvIcon">
                 <Button
@@ -117,7 +117,7 @@ function Product({ data, type, className }) {
                 ></Button>
               </div>
               <ReactTooltip id="qvIcon" type="dark" effect="solid">
-                <span>Quick view</span>
+                <span>Aperçu rapide</span>
               </ReactTooltip>
               <div className="product-btn" data-tip data-for="wlIcon">
                 <Button
@@ -133,7 +133,7 @@ function Product({ data, type, className }) {
                 ></Button>
               </div>
               <ReactTooltip id="wlIcon" type="dark" effect="solid">
-                <span>Add to Wishlist</span>
+                <span>Ajouter aux favoris</span>
               </ReactTooltip>
             </div>
           </div>
@@ -295,7 +295,7 @@ function Product({ data, type, className }) {
                   ></Button>
                 </div>
                 <ReactTooltip id="l-wlIcon" type="dark" effect="solid">
-                  <span>Add to Wishlist</span>
+                  <span>Ajouter aux favoris</span>
                 </ReactTooltip>
               </div>
             </div>

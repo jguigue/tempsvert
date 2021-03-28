@@ -19,11 +19,11 @@ export default function () {
   const onSubmit = (data) => console.log(data);
   const onCouponSubmit = (data) => console.log(data);
   return (
-    <LayoutOne title="Checkout">
-      <Breadcrumb title="Checkout">
-        <BreadcrumbItem name="Home" />
-        <BreadcrumbItem name="Shop" />
-        <BreadcrumbItem name="Checkout" current />
+    <LayoutOne title="Paiement - Le Temps Verts">
+      <Breadcrumb title="Paiement">
+        <BreadcrumbItem name="Accueil" />
+        <BreadcrumbItem name="Boutique" />
+        <BreadcrumbItem name="Paiement" current />
       </Breadcrumb>
       <div className="checkout">
         <div className="container">
@@ -33,11 +33,11 @@ export default function () {
                 <div className="checkout__form">
                   <div className="checkout__form__contact">
                     <div className="checkout__form__contact__title">
-                      <h5 className="checkout-title">Contact information</h5>
+                      <h5 className="checkout-title">Informations de contact</h5>
                       <p>
-                        Already have an account?
+                        Vous avez déjà un compte?
                         <Link href={process.env.PUBLIC_URL + "#"}>
-                          <a>Login</a>
+                          <a>Se connecter</a>
                         </Link>
                       </p>
                     </div>
@@ -46,11 +46,11 @@ export default function () {
                         type="text"
                         name="contact"
                         ref={register({ required: true })}
-                        placeholder="Email or mobile phone number"
+                        placeholder="Email ou numéro de téléphone"
                       />
                       {errors.contact && (
                         <span className="input-error">
-                          Please provide a name or email
+                          Merci de fournir un email
                         </span>
                       )}
                     </div>
@@ -61,16 +61,16 @@ export default function () {
                         name="subcribeNews"
                         ref={register}
                       />
-                      Keep me up to dateon news and exclusive offers
+                      M'informer des dernières nouveautés et des offres exclusives.
                     </label>
                   </div>
                   <div className="checkout__form__shipping">
-                    <h5 className="checkout-title">Shipping address</h5>
+                    <h5 className="checkout-title">Addresse de livraison</h5>
                     <div className="row">
                       <div className="col-12 col-md-6">
                         <div className="input-validator">
                           <label>
-                            First name <span>*</span>
+                            Nom <span>*</span>
                             <input
                               type="text"
                               name="firstName"
@@ -79,7 +79,7 @@ export default function () {
                           </label>
                           {errors.firstName && (
                             <span className="input-error">
-                              Please provide your first name
+                            Merci de fournir un nom de famille
                             </span>
                           )}
                         </div>
@@ -87,7 +87,7 @@ export default function () {
                       <div className="col-12 col-md-6">
                         <div className="input-validator">
                           <label>
-                            Last name <span>*</span>
+                            Prénom <span>*</span>
                             <input
                               type="text"
                               name="lastName"
@@ -96,7 +96,7 @@ export default function () {
                           </label>
                           {errors.lastName && (
                             <span className="input-error">
-                              Please provide your last name
+                              Merci de fournir un prénom
                             </span>
                           )}
                         </div>
@@ -104,7 +104,7 @@ export default function () {
                       <div className="col-12">
                         <div className="input-validator">
                           <label>
-                            Country <span>*</span>
+                            Pays <span>*</span>
                             <input
                               type="text"
                               name="country"
@@ -113,7 +113,7 @@ export default function () {
                           </label>
                           {errors.country && (
                             <span className="input-error">
-                              Please provide your country
+                              Merci de fournir un pays
                             </span>
                           )}
                         </div>
@@ -121,23 +121,23 @@ export default function () {
                       <div className="col-12">
                         <div className="input-validator">
                           <label>
-                            Address <span>*</span>
+                            Addresse <span>*</span>
                             <input
                               type="text"
                               name="streetAddress"
                               ref={register({ required: true })}
-                              placeholder="Steet address"
+                              placeholder="Rue"
                             />
                             <input
                               type="text"
                               name="apartment"
                               ref={register({ required: true })}
-                              placeholder="Apartment, suite, unite ect ( optinal )"
+                              placeholder="Autres"
                             />
                           </label>
                           {errors.streetAddress || errors.apartment ? (
                             <span className="input-error">
-                              Please provide your address
+                              Merci de fournir une adresse
                             </span>
                           ) : null}
                         </div>
@@ -145,7 +145,7 @@ export default function () {
                       <div className="col-12">
                         <div className="input-validator">
                           <label>
-                            Town/City <span>*</span>
+                            Ville <span>*</span>
                             <input
                               type="text"
                               name="town"
@@ -154,7 +154,7 @@ export default function () {
                           </label>
                           {errors.town && (
                             <span className="input-error">
-                              Please provide your town/city
+                              Merci de fournir une ville
                             </span>
                           )}
                         </div>
@@ -162,7 +162,7 @@ export default function () {
                       <div className="col-12">
                         <div className="input-validator">
                           <label>
-                            Country/State <span>*</span>
+                            Région <span>*</span>
                             <input
                               type="text"
                               name="state"
@@ -171,7 +171,7 @@ export default function () {
                           </label>
                           {errors.state && (
                             <span className="input-error">
-                              Please provide your country/State
+                              Merci de fournir i,e régop,
                             </span>
                           )}
                         </div>
@@ -179,7 +179,7 @@ export default function () {
                       <div className="col-12">
                         <div className="input-validator">
                           <label>
-                            Postcode/ZIP <span>*</span>
+                            Code postale <span>*</span>
                             <input
                               type="text"
                               name="zip"
@@ -188,7 +188,7 @@ export default function () {
                           </label>
                           {errors.zip && (
                             <span className="input-error">
-                              Please provide your postcode/ZIP
+                             Merci de fournir un code postale
                             </span>
                           )}
                         </div>
@@ -196,11 +196,11 @@ export default function () {
                       <div className="col-12">
                         <div className="input-validator">
                           <label>
-                            Order note
+                            Note pour votre commande
                             <input
                               type="text"
                               name="note"
-                              placeholder="Note about your order, e.g, special noe for delivery"
+                              placeholder="Pour fournir un message lors de votre livraison, c'est ici"
                               ref={register()}
                             />
                           </label>
@@ -214,7 +214,7 @@ export default function () {
                         name="saveInfo"
                         ref={register()}
                       />
-                      Save this infomation for next time
+                      Sauvegarder ces informations pour la prochaine fois.
                     </label>
                   </div>
                 </div>
@@ -224,29 +224,29 @@ export default function () {
               <div className="row">
                 <div className="col-12 col-md-6 col-lg-12 ml-auto">
                   <div className="checkout__total">
-                    <h5 className="checkout-title">Your order</h5>
+                    <h5 className="checkout-title">Votre commande</h5>
                     <form
                       className="checkout__total__coupon"
                       onSubmit={couponHandleSubmit(onCouponSubmit)}
                     >
-                      <h5>Coupon Code</h5>
+                      <h5>Code promo</h5>
                       <div className="input-validator">
                         <input
                           type="text"
-                          placeholder="Your code here"
+                          placeholder="Entrer son code promo ici"
                           name="coupon"
                           ref={couponRegister({ required: true })}
                         />
                         {couponErrors.coupon && (
                           <span className="input-error">
-                            Please provide a coupon code
+                            Merci de fournir un code valide
                           </span>
                         )}
                       </div>
-                      <button className="btn -dark">Apply</button>
+                      <button className="btn -dark">Appliquer</button>
                     </form>
                     <div className="checkout__total__price">
-                      <h5>Product</h5>
+                      <h5>Produit</h5>
                       <table>
                         <colgroup>
                           <col style={{ width: "70%" }} />
@@ -272,7 +272,7 @@ export default function () {
                         <table>
                           <tbody>
                             <tr>
-                              <td>Subtotal</td>
+                              <td>Sous total</td>
                               <td>{calculateTotalPrice(cartState, true)}</td>
                             </tr>
                             <tr>
@@ -291,7 +291,7 @@ export default function () {
                             name="payment"
                             ref={register}
                           />
-                          Cheque payment
+                          Carte bleue
                         </label>
                         <label className="checkbox-label" htmlFor="paypal">
                           <input
@@ -309,7 +309,7 @@ export default function () {
                       className="btn -red"
                       onClick={handleSubmit(onSubmit)}
                     >
-                      Place order
+                      Commander
                     </button>
                   </div>
                 </div>

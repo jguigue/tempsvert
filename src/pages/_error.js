@@ -15,23 +15,22 @@ export default function () {
             <div className="col-12 col-md-7">
               <div className="error-404__content">
                 <h2>Oops!</h2>
-                <h5>404 PAGE NOT FOUND</h5>
+                <h5>404 !</h5>
                 <p>
-                  This page couldn't be found! Back to home page if you like.
-                  Please use search for help!
+                  Nous n'avons pas trouvé votre page ! :(
                 </p>
                 <div className="form-wrapper">
                   <form>
-                    <input type="text" placeholder="Enter keyword" />
+                    <input type="text" placeholder="Entrer un mot" />
                     <button className="btn -transparent">
                       <i className="fal fa-search"></i>
                     </button>
                   </form>
                   <Button
-                    action={process.env.PUBLIC_URL + "/homepages/homepage1"}
+                    action={process.env.PUBLIC_URL + "/"}
                     className="-underline"
                     color="transparent"
-                    content="Back to homepage"
+                    content="Retourner à l'accueil"
                   />
                 </div>
               </div>

@@ -7,7 +7,6 @@ import { Breadcrumb, BreadcrumbItem } from "../../components/Other/Breadcrumb";
 import { formatCurrency } from "../../common/utils";
 import { addToCart } from "../../redux/actions/cartActions";
 import { removeFromWishlist } from "../../redux/actions/wishlistActions";
-import InstagramTwo from "../../components/Sections/Instagram/InstagramTwo";
 
 export default function () {
   const dispatch = useDispatch();
@@ -21,26 +20,26 @@ export default function () {
     let productItem = checkProductInCart(data.id);
     if (!productItem) {
       dispatch(addToCart(data));
-      return toast.success("Product added to cart !");
+      return toast.success("Montre ajoutée au panier !");
     }
   };
   const removeWishlistProduct = (e, pid) => {
     e.preventDefault();
     dispatch(removeFromWishlist(pid));
-    return toast.error("Product removed from wishlist");
+    return toast.error("Montre supprimée des favoris");
   };
   return (
-    <LayoutOne title="Wishlist">
-      <Breadcrumb title="Wishlist">
-        <BreadcrumbItem name="Home" />
-        <BreadcrumbItem name="Shop" />
-        <BreadcrumbItem name="Wishlist" current />
+    <LayoutOne title="Favoris - Le Temps Verts">
+      <Breadcrumb title="Favoris">
+        <BreadcrumbItem name="Accueil" />
+        <BreadcrumbItem name="Boutique" />
+        <BreadcrumbItem name="Favoris" current />
       </Breadcrumb>
       <div className="wishlist">
         <div className="container">
           {!wishlistState || wishlistState.length === 0 ? (
             <div className="wishlist__empty">
-              <h3>No product in wishlist</h3>
+              <h3>Aucun produit dans les favoris</h3>
             </div>
           ) : (
             <div className="wishlist__table">
@@ -54,8 +53,8 @@ export default function () {
                   </colgroup>
                   <thead>
                     <tr>
-                      <th>Product</th>
-                      <th>Unit Price</th>
+                      <th>Produit</th>
+                      <th>Prix</th>
                       <th>Stock</th>
                       <th></th>
                     </tr>
@@ -87,7 +86,7 @@ export default function () {
                           </div>
                         </td>
                         <td>{formatCurrency(item.price)}</td>
-                        <td>{item.quantity > 0 ? "In stock" : "Out stock"}</td>
+                        <td>{item.quantity > 0 ? "En stock" : "Aucun stock"}</td>
                         <td>
                           <a
                             href={process.env.PUBLIC_URL + "#"}
@@ -97,8 +96,8 @@ export default function () {
                             onClick={(e) => addToCartHandle(e, item)}
                           >
                             {checkProductInCart(item.id)
-                              ? "Added to cart"
-                              : "Add to cart"}
+                              ? "Dans le panier"
+                              : "Ajouter au panier"}
                           </a>
                           <a
                             className="remove-btn"
@@ -117,7 +116,6 @@ export default function () {
           )}
         </div>
       </div>
-      <InstagramTwo />
     </LayoutOne>
   );
 }

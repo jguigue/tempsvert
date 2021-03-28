@@ -58,7 +58,7 @@ export default function ProductDetailController({
           />
         </div>
         <ReactTooltip id="add-wishlist" type="dark" effect="solid">
-          <span>Add to wishlist</span>
+          <span>Ajouter aux favoris</span>
         </ReactTooltip>
       </div>
     </div>

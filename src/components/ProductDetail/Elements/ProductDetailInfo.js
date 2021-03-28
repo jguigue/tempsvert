@@ -31,9 +31,9 @@ export default function ProductDetailInfo({ data, onReviewSubmit, hideTab }) {
     dispatch(addToWishlist(data));
     toast.dismiss();
     if (!product) {
-      return toast.success("Product added to wishlist !");
+      return toast.success("Montre ajoutée aux favoris !");
     } else {
-      return toast.error("Product removed from wishlist !");
+      return toast.error("Montre supprimée des favoris !");
     }
   };
   return (
@@ -43,9 +43,9 @@ export default function ProductDetailInfo({ data, onReviewSubmit, hideTab }) {
         <h2>{data.name}</h2>
         <div className="product-detail__content__header__comment-block">
           <Rate currentRate={data.rate} />
-          <p>03 Reviews</p>
+          <p>03 Avis</p>
           <Link href={process.env.PUBLUC_URL + "#"}>
-            <a>Write a reviews</a>
+            <a>Écrire un avis</a>
           </Link>
         </div>
         <h3>
@@ -59,20 +59,17 @@ export default function ProductDetailInfo({ data, onReviewSubmit, hideTab }) {
       <div className="product-detail__content__footer">
         <ul>
           <li>
-            Brand: <span>{data.brand}</span>
+            Collection: <span>{data.brand}</span>
           </li>
           <li>
-            Product code: <span>{data.code}</span>
+            Code produit: <span>{data.code}</span>
           </li>
           <li>
-            Reward point: <span>{data.point}</span>
-          </li>
-          <li>
-            Availability:
+            Disponibilité:
             {data.quantity > 0 ? (
-              <span className="in-stock"> In Stock</span>
+              <span className="in-stock"> En stock</span>
             ) : (
-              <span className="out-stock"> Out Stock</span>
+              <span className="out-stock"> Plus de stock</span>
             )}
           </li>
         </ul>

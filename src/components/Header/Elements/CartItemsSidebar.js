@@ -19,9 +19,9 @@ function CartItemsSidebar({ showCart, setShowCart }) {
           classNames="cart-sidebar"
         >
           <div className="cart-items__wrapper">
-            <h2>Shopping cart</h2>
+            <h2>Votre Panier</h2>
             {cartState.length === 0 ? (
-              <h3 className="empty-noti">No product in cart</h3>
+              <h3 className="empty-noti">Aucun produit dans le panier.</h3>
             ) : (
               <>
                 {cartState.length !== 0 &&
@@ -46,13 +46,13 @@ function CartItemsSidebar({ showCart, setShowCart }) {
                       width="100%"
                       action={process.env.PUBLIC_URL + "/shop/cart"}
                       color="dark"
-                      content="View cart"
+                      content="Voir le panier"
                     />
                     <Button
                       width="100%"
                       action={process.env.PUBLIC_URL + "/shop/checkout"}
                       color="red"
-                      content="Checkout"
+                      content="Passer au paiement"
                     />
                   </div>
                 </div>

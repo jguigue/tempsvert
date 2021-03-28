@@ -1,22 +1,17 @@
 [
   {
     "iconClass": "fas fa-map-marker-alt",
-    "title": "Address",
+    "title": "Addresse",
     "detail": "2168 S Archer Ave, Chicago, IL 60616, US"
   },
   {
     "iconClass": "fas fa-phone-alt",
-    "title": "Phone",
-    "detail": "+1 312-808-1999     |     +1 233-688-8999"
+    "title": "Téléphone",
+    "detail": "+33 4 66 57 05 67     |     +33 6 77 51 06 98"
   },
   {
     "iconClass": "far fa-envelope",
     "title": "Email",
-    "detail": "Beatycosmetics@gmail.com"
-  },
-  {
-    "iconClass": "far fa-clock",
-    "title": "Opentime",
-    "detail": "Sun-Sat: 8.00am - 9.00.pm"
+    "detail": "contact@guiguejulien.com"
   }
 ]

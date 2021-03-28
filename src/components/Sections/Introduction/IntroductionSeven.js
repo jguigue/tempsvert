@@ -92,7 +92,7 @@ export default function IntroductionSeven({ data }) {
                   </Accordion>
                   <div className="quantity-group">
                     <div className="quantity-group__controller">
-                      <span>Quantity:</span>
+                      <span>Quantité:</span>
                       <Quantity getQuantity={setQuantity} />
                     </div>
                     <Button

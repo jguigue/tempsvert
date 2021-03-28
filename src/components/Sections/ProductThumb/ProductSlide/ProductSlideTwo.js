@@ -42,7 +42,7 @@ export default function ProductSlideTwo({ data }) {
     <div className="product-slide -style-2">
       <div className="container">
         <SectionTitleOne align="center" hideDecoration>
-          Related Products
+          Produits liés
         </SectionTitleOne>
         <ProductSlider data={data} sliderSettings={settings} />
       </div>

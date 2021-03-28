@@ -4,24 +4,12 @@
     "category": "original",
     "name": "Montre Mansonia",
     "rate": 4,
-    "price": 35,
+    "price": 250,
     "new": true,
     "brand": "Msitu",
     "code": "PM 01",
     "point": 30,
     "quantity": 0,
-    "variation": [
-      {
-        "color": "red",
-        "colorCode": "#8B0000",
-        "image": "/assets/images/montres/1/1.jpg"
-      },
-      {
-        "color": "blue",
-        "colorCode": "#4169E1",
-        "image": "/assets/images/montres/1/2.jpg"
-      }
-    ],
     "thumbImage": [
       "/assets/images/montres/1/2.jpg",
       "/assets/images/montres/1/1.jpg"
@@ -36,14 +24,15 @@
       "/assets/images/montres/1/7.jpg"
     ],
     "description": "",
-    "slug": "the-expert-mascaraa-1"
+    "slug": "montre-mansonia"
   },
   {
     "id": "2",
     "category": "original",
     "name": "Montre Marula",
     "rate": 5,
-    "price": 38,
+    "price":300.00,
+    "discount": 159.99,
     "brand": "Msitu",
     "code": "PM 02",
     "point": 28,
@@ -61,31 +50,19 @@
       "/assets/images/montres/2/7.jpg"
     ],
     "description": "",
-    "slug": "velvet-melon-high-intensity-2"
+    "slug": "montre-marula"
   },
   {
     "id": "3",
     "category": "original",
     "name": "Montre Lapacho",
     "rate": 4,
-    "price": 35,
-    "discount": 30,
+    "price": 230,
+    "discount": 219.99,
     "brand": "Floresta",
     "code": "PM 01",
     "point": 30,
     "quantity": 3,
-    "variation": [
-      {
-        "color": "red",
-        "colorCode": "#8B0000",
-        "image": "/assets/images/montres/3/1.jpg"
-      },
-      {
-        "color": "blue",
-        "colorCode": "#4169E1",
-        "image": "/assets/images/montres/3/2.jpg"
-      }
-    ],
     "thumbImage": [
       "/assets/images/montres/3/2.jpg",
       "/assets/images/montres/3/1.jpg"
@@ -100,14 +77,14 @@
       "/assets/images/montres/3/7.jpg"
     ],
     "description": "",
-    "slug": "leather-shopper-bag-3"
+    "slug": "montre-lapacho"
   },
   {
     "id": "4",
     "category": "original",
     "name": "Montre Astronium",
     "rate": 5,
-    "price": 38,
+    "price": 199.99,
     "brand": "Floresta",
     "code": "PM 02",
     "point": 28,
@@ -126,15 +103,15 @@
       "/assets/images/montres/4/7.jpg"
     ],
     "description": "",
-    "slug": "luxe-jewel-lipstick-4"
+    "slug": "montre-astronium"
   },
   {
     "id": "5",
     "category": "minimaliste",
     "name": "Montre Kadam",
     "rate": 5,
-    "price": 40,
-    "discount": 20,
+    "price": 90,
+    "discount": 85.99,
     "brand": "Shinrin",
     "code": "PM 02",
     "point": 28,
@@ -153,14 +130,14 @@
       "/assets/images/montres/5/7.jpg"
     ],
     "description": "",
-    "slug": "penpoint-seamless-beauty-5"
+    "slug": "montre-kadam"
   },
   {
     "id": "6",
     "category": "minimaliste",
     "name": "Montre Euodia",
     "rate": 5,
-    "price": 38,
+    "price": 94.99,
     "brand": "Shinrin",
     "code": "PM 02",
     "point": 28,
@@ -177,15 +154,15 @@
       "/assets/images/montres/6/5.jpg",
       "/assets/images/montres/6/6.jpg"
     ],
-    "description": "",
-    "slug": "the-sneaky-lips-6"
+    "description": "Trop cool",
+    "slug": "montre-euodia"
   },
   {
     "id": "7",
     "category": "minimaliste",
     "name": "Montre Hiba",
     "rate": 4,
-    "price": 38,
+    "price": 94.99,
     "brand": "Shinrin",
     "code": "PM 02",
     "point": 28,
@@ -203,14 +180,14 @@
       "/assets/images/montres/7/6.jpg"
     ],
     "description": "",
-    "slug": "white-facial-cream-7"
+    "slug": "montre-hiba"
   },
   {
     "id": "8",
     "category": "classique",
     "name": "Montre Hakea",
     "rate": 4,
-    "price": 55,
+    "price": 349.99,
     "brand": "Rakau",
     "code": "PM 03",
     "point": 16,
@@ -229,6 +206,6 @@
       "/assets/images/montres/8/7.jpg"
     ],
     "description": "",
-    "slug": "orange-massage-cream-8"
+    "slug": "montre-hakea"
   }
 ]

@@ -21,14 +21,13 @@ export default function () {
   return ( 
     foundProduct !== null && (
       <LayoutOne title={foundProduct.name}>
-        <Breadcrumb title="Product Detail">
-          <BreadcrumbItem name="Home" />
-          <BreadcrumbItem name="Shop" />
+        <Breadcrumb title={foundProduct.name}>
+          <BreadcrumbItem name="Accueil" />
+          <BreadcrumbItem name="Boutique" />
           <BreadcrumbItem name={foundProduct.name} current />
         </Breadcrumb>
         <ProductDetail data={foundProduct} onReviewSubmit={onReviewSubmit} />
         <ProductSlideTwo data={products} />
-        <InstagramTwo />
       </LayoutOne>
     )
   );

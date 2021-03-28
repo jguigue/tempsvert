@@ -25,29 +25,29 @@ export default function () {
   const removeAllProduct = (e) => {
     e.preventDefault();
     dispatch(removeAllFromCart());
-    return toast.error("All product removed from cart");
+    return toast.error("Votre panier est désormais vide :( ");
   };
   const removeProduct = (e, cartId) => {
     e.preventDefault();
     dispatch(removeFromCart(cartId));
-    return toast.error("Product removed from cart");
+    return toast.error("Montre supprimée du panier");
   };
   return (
-    <LayoutOne title="Cart">
-      <Breadcrumb title="Shopping cart">
-        <BreadcrumbItem name="Home" />
-        <BreadcrumbItem name="Shop" />
-        <BreadcrumbItem name="Shopping cart" current />
+    <LayoutOne title="Panier - Le Temps Verts">
+      <Breadcrumb title="Panier">
+        <BreadcrumbItem name="Accueil" />
+        <BreadcrumbItem name="Boutique" />
+        <BreadcrumbItem name="Panier" current />
       </Breadcrumb>
       <div className="cart">
         <div className="container">
           {!cartState || cartState.length === 0 ? (
             <div className="cart__empty">
-              <h3>No product in cart</h3>
+              <h3>Aucun produit dans le panier</h3>
               <Button
                 color="dark"
-                action={process.env.PUBLIC_URL + "/shop/fullwidth-4col"}
-                content="Shopping now"
+                action={process.env.PUBLIC_URL + "/shop/"}
+                content="Acheter maintenant !"
               />
             </div>
           ) : (
@@ -64,9 +64,9 @@ export default function () {
                     </colgroup>
                     <thead>
                       <tr>
-                        <th>Product</th>
-                        <th>Price</th>
-                        <th>Quantity</th>
+                        <th>Produit</th>
+                        <th>Prix</th>
+                        <th>Quantité</th>
                         <th>Total</th>
                         <th></th>
                       </tr>
@@ -129,14 +129,14 @@ export default function () {
                   <Link href={process.env.PUBLIC_URL + "/shop/fullwidth-4col"}>
                     <a>
                       <i className="fal fa-long-arrow-left"></i>
-                      Continue Shopping
+                      Continuer ses achats
                     </a>
                   </Link>
 
                   <Link href="#">
                     <a onClick={(e) => removeAllProduct(e)}>
                       <i className="fal fa-trash"></i>
-                      Clear Shopping Cart
+                      Supprimer le panier
                     </a>
                   </Link>
                 </div>
@@ -145,20 +145,20 @@ export default function () {
                 <div className="row">
                   <div className="col-12 col-md-8">
                     <div className="cart__total__discount">
-                      <p>Enter coupon code. It will be applied at checkout.</p>
+                      <p>Entrer un code promo. Il sera appliqué au paiement.</p>
                       <div className="input-validator">
                         <form onSubmit={handleSubmit(onSubmit)}>
                           <input
                             type="text"
                             name="discountCode"
-                            placeholder="Your code here"
+                            placeholder="Entrer son code ici"
                             ref={register({ required: true })}
                           />
-                          <button className="btn -dark">Apply</button>
+                          <button className="btn -dark">Appliquer</button>
                         </form>
                         {errors.discountCode && (
                           <span className="input-error">
-                            Please provide a discount code
+                            Merci de founir un code valide
                           </span>
                         )}
                       </div>
@@ -166,11 +166,11 @@ export default function () {
                   </div>
                   <div className="col-12 col-md-4">
                     <div className="cart__total__content">
-                      <h3>Cart Total</h3>
+                      <h3>Total</h3>
                       <table>
                         <tbody>
                           <tr>
-                            <th>Subtotal</th>
+                            <th>Sous Total</th>
                             <td>{calculateTotalPrice(cartState, true)}</td>
                           </tr>
                           <tr>
@@ -186,7 +186,7 @@ export default function () {
                         width="100%"
                         action={process.env.PUBLIC_URL + "/shop/checkout"}
                         color="dark"
-                        content="Proceed to checkout"
+                        content="Procéder au paiement"
                       />
                     </div>
                   </div>
@@ -196,7 +196,6 @@ export default function () {
           )}
         </div>
       </div>
-      <InstagramTwo />
     </LayoutOne>
   );
 }

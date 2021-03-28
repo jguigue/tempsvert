@@ -30,10 +30,10 @@ export default function () {
     setCurrentData(sortedProduct);
   }, [offset, currentSort, filterData]);
   return (
-    <LayoutOne title="Shop Fullwidth Left Sidebar" container="wide">
-      <Breadcrumb title="Shop">
-        <BreadcrumbItem name="Home" />
-        <BreadcrumbItem name="Shop" current />
+    <LayoutOne title="La boutique - Le Temps Verts" container="wide">
+      <Breadcrumb title="Boutique">
+        <BreadcrumbItem name="Accueil" />
+        <BreadcrumbItem name="Boutique" current />
       </Breadcrumb>
       <div className="shop -five-col">
         <div className="container-full-half">

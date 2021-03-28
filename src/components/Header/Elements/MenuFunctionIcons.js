@@ -84,7 +84,7 @@ export default function MenuFunctionIcons(props) {
                 <span className="cart__quantity">{cartState.length}</span>
               </a>
               <h5>
-                Cart: <span>{formatCurrency(calcalateTotal(cartState))}</span>
+                Panier: <span>{formatCurrency(calcalateTotal(cartState))}</span>
               </h5>
             </div>
             <a
