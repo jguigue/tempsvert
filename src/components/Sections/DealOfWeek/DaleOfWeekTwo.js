@@ -34,7 +34,7 @@ export default function DaleOfWeekTwo() {
           </div>
           <div className="col-12 col-lg-6 order-lg-1">
             <div className="dow-two__content">
-              <h5>Offre de pâques !</h5>
+              <h5>Offre du printemps !</h5>
               <h3>Montre Marula</h3>
               <div className="special-price">
                 <p>159.99€</p>
