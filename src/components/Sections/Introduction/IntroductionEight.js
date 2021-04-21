@@ -10,7 +10,7 @@ export default function IntroductionEight({ data }) {
               <img
                 src={
                   process.env.PUBLIC_URL +
-                  "/assets/images/bg/bgvaleurs.jpg"
+                  "/assets/images/bg/bgvaleurs.webp"
                 }
                 alt="Introduction image"
               />

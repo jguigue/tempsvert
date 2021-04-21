@@ -9,7 +9,7 @@ export default function Review(props) {
       <div className="review__header">
         <div className="review__header__avatar">
           <img
-            src="https://i1.wp.com/metro.co.uk/wp-content/uploads/2020/03/GettyImages-1211127989.jpg?quality=90&strip=all&zoom=1&resize=644%2C416&ssl=1"
+            src="https://i1.wp.com/metro.co.uk/wp-content/uploads/2020/03/GettyImages-1211127989.webp?quality=90&strip=all&zoom=1&resize=644%2C416&ssl=1"
             alt="Reviewer avatar"
           />
         </div>

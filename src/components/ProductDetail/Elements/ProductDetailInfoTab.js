@@ -44,7 +44,7 @@ export default function ProductDetailInfoTab({ onReviewSubmit }) {
         </TabPanel>
         <TabPanel className="tab__content__item -review">
           <Review
-            avatar="https://i1.wp.com/metro.co.uk/wp-content/uploads/2020/03/GettyImages-1211127989.jpg?quality=90&strip=all&zoom=1&resize=644%2C416&ssl=1"
+            avatar="https://i1.wp.com/metro.co.uk/wp-content/uploads/2020/03/GettyImages-1211127989.webp?quality=90&strip=all&zoom=1&resize=644%2C416&ssl=1"
             name="Zachary Wade"
             publicDate="Mar 17, 2021"
             rate={4}

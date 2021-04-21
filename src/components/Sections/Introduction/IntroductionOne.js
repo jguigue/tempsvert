@@ -23,7 +23,7 @@ export default function IntroductionOne({ data }) {
             <div className="introduction-one__image">
               <div className="introduction-one__image__detail">
                  <img
-                   src="/assets/images/montres/watchmannequin.jpg"
+                   src="/assets/images/montres/watchmannequin.webp"
                    alt="background"
                  />
                 <video alt="Slider image"
