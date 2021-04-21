@@ -1,28 +1,28 @@
 [
   {
     "id": 1,
-    "image": "/assets/images/team/teamOne/1.png",
+    "image": "/assets/images/team/teamOne/1.webp",
     "name": "Nicolas Ribeiro",
     "position": "Média-planner & Cadranographe",
     "quote": "Professionnel dans l'élaboration d'un plan média, toujours le sourire mais aussi expert en cadrans !"
   },
   {
     "id": 2,
-    "image": "/assets/images/team/teamOne/2.png",
+    "image": "/assets/images/team/teamOne/2.webp",
     "name": "Maëva Perrone",
     "position": "Community Manageuse & Micromécanicienne",
     "quote": "Votre référente dans la communication sur les réseaux sociaux et la responsable de la qualité de vos pièces miniatures !"
   },
   {
     "id": 3,
-    "image": "/assets/images/team/teamOne/3.png",
+    "image": "/assets/images/team/teamOne/3.webp",
     "name": "Irvin Delhommelle",
     "position": "Infographiste & Horloger de renom",
     "quote": "Un infographiste de talent et un sens de l'horlogerie d'une forte précision ! Un vrai as de la pince à épiler, c'est officiel."
   },
   {
     "id": 4,
-    "image": "/assets/images/team/teamOne/4.png",
+    "image": "/assets/images/team/teamOne/4.webp",
     "name": "Julien Guigue",
     "position": "Développeur & Designer produits",
     "quote": "Il s'occupe de la construction de ce site, vous rédige ces jolies phrases et dessine vos jolies montres!"

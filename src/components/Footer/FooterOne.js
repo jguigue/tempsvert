@@ -14,7 +14,7 @@ export default function FooterOne() {
             <Link href={process.env.PUBLIC_URL + "/homepages/homepage1"}>
               <a>
                 <img
-                  src={process.env.PUBLIC_URL + "/assets/images/logo.png"}
+                  src={process.env.PUBLIC_URL + "/assets/images/logo.webp"}
                   alt="Logo"
                 />
               </a>

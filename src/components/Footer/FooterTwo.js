@@ -13,7 +13,7 @@ export default function FooterTwo() {
               <Link href={process.env.PUBLIC_URL + "/homepages/homepage1"}>
                 <a className="footer-two__content__logo">
                   <img
-                    src={process.env.PUBLIC_URL + "/assets/images/logo.png"}
+                    src={process.env.PUBLIC_URL + "/assets/images/logo.webp"}
                     alt="Logo"
                   />
                 </a>
