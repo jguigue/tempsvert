@@ -126,7 +126,7 @@ export default function () {
                   </table>
                 </div>
                 <div className="cart__table__footer">
-                  <Link href={process.env.PUBLIC_URL + "/shop/fullwidth-4col"}>
+                  <Link href={process.env.PUBLIC_URL + "/shop"}>
                     <a>
                       <i className="fal fa-long-arrow-left"></i>
                       Continuer ses achats

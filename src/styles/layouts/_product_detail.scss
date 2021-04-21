@@ -259,6 +259,21 @@
       &.-description {
         p {
           @include typo($fsz: emCal(16, 15), $lh: emCal(15, 27));
+
+        }
+        span {
+          line-height: 3em;
+          color: #111;
+          font-size: 0.9375em;
+          font-weight: normal;
+
+        }
+        ul {
+          margin-bottom: 20px;
+          line-height: 2em;
+          color: #111;
+          font-size: 0.9375em;
+          font-weight: normal;
         }
       }
       &.-ship {

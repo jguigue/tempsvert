@@ -15,7 +15,7 @@ export default function IntroductionFour() {
                     </h3>
                     <h5>of the season</h5>
                     <Link
-                      href={process.env.PUBLIC_URL + "/shop/fullwidth-4col"}
+                      href={process.env.PUBLIC_URL + "/shop"}
                     >
                       <a className="btn -transparent -underline">Shop Now</a>
                     </Link>
@@ -39,7 +39,7 @@ export default function IntroductionFour() {
                     </h3>
                     <h5>Your regimen upgraded</h5>
                     <Link
-                      href={process.env.PUBLIC_URL + "/shop/fullwidth-4col"}
+                      href={process.env.PUBLIC_URL + "/shop"}
                     >
                       <a className="btn -transparent -underline">Shop Now</a>
                     </Link>
@@ -67,7 +67,7 @@ export default function IntroductionFour() {
                     </h3>
                     <h5>Matte Collection</h5>
                     <Link
-                      href={process.env.PUBLIC_URL + "/shop/fullwidth-4col"}
+                      href={process.env.PUBLIC_URL + "/shop"}
                     >
                       <a className="btn -transparent -underline">Shop Now</a>
                     </Link>
@@ -91,7 +91,7 @@ export default function IntroductionFour() {
                     </h3>
                     <h5>Limited time only</h5>
                     <Link
-                      href={process.env.PUBLIC_URL + "/shop/fullwidth-4col"}
+                      href={process.env.PUBLIC_URL + "/shop"}
                     >
                       <a className="btn -transparent -underline">Shop Now</a>
                     </Link>

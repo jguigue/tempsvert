@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function CategoryCard({ data }) {
   return (
-    <Link href={process.env.PUBLIC_URL + "/shop/fullwidth-4col"}>
+    <Link href={process.env.PUBLIC_URL + "/shop"}>
       <a className="category-card">
         <div className="category-card__background">
           <img src={process.env.PUBLIC_URL + data.image} alt={data.category} />

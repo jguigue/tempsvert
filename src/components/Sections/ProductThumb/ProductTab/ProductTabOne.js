@@ -59,7 +59,7 @@ export default function ProductTabOne({ data, categories }) {
               </div>
               <div className="text-center">
                 <Button
-                  action={process.env.PUBLIC_URL + "/shop/fullwidth-4col"}
+                  action={process.env.PUBLIC_URL + "/shop"}
                   color="transparent"
                   className="-underline"
                   content="View all product"

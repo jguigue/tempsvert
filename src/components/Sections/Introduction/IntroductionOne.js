@@ -16,7 +16,7 @@ export default function IntroductionOne({ data }) {
     };
   }, []);
   return (
-    <div className="introduction-one">
+    <div className="introduction-one" id="intro">
       <div className="container">
         <div className="row align-items-center">
           <div className="col-12 col-md-6">
@@ -74,7 +74,7 @@ export default function IntroductionOne({ data }) {
               <Button
                 color={data.btn.color}
                 content={data.btn.content}
-                action="#"
+                action="/about/"
               />
             </div>
           </div>

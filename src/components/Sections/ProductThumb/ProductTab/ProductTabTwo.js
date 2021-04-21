@@ -54,7 +54,7 @@ export default function ProductTabTwo({
               ))}
             </ul>
             <Button
-              action={process.env.PUBLIC_URL + "/shop/fullwidth-4col"}
+              action={process.env.PUBLIC_URL + "/shop"}
               color="white"
               content="View all"
             />

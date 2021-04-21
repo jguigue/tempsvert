@@ -15,12 +15,15 @@ export default function ProductDetailInfoTab({ onReviewSubmit }) {
         </TabList>
 
         <TabPanel className="tab__content__item -description">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-            ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
-            accumsan lacus vel facilisis.
-          </p>
+          <p>Cette montre en bois design et éco-responsable est idéale pour vous ou pour un cadeau à un proche. Montre faite à partir de bois de Chêne de forêts Autrichiennes.</p> 
+        <span>Packaging composé de : </span>
+        <ul>
+          <li>Boite en carton recyclé avec son coussin de paille emmaillé </li>
+          <li>Kit de réglage du cadran </li>
+          <li> Chiffon de nettoyage recyclé</li>
+          <li>Guide d’utilisation en papier recyclé </li>
+        </ul>
+          <p>Achetez une montre en bois contribue à l’environnement, grâce à notre partenaire Reforestaction chaque montre en bois achetée c’est un arbre planté !  </p>
         </TabPanel>
         <TabPanel className="tab__content__item -ship">
           <h5>

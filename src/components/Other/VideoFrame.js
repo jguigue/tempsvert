@@ -17,18 +17,7 @@ export default function VideoFrame(props) {
         <div className="video-frame__poster">
           <img src={poster} alt="Video poster" />
         </div>
-        <Button
-          action="#"
-          color="white"
-          height="50px"
-          width="50px"
-          className="-round"
-          onClick={(e) => {
-            e.preventDefault();
-            setShowModal(true);
-          }}
-          content={<i className="fas fa-play"></i>}
-        ></Button>
+        
         <a></a>
       </div>
       <Modal

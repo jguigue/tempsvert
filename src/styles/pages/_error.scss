@@ -9,6 +9,7 @@
     position: center;
   }
   &__content {
+    color: #fff !important;
     h2 {
       @include typo($fsz: emCal(16, 200), $color: setColor(red), $fw: 700);
       margin-bottom: emCal(200, 40);
@@ -18,6 +19,7 @@
       }
     }
     h5 {
+      color: #fff !important;
       @include typo($fsz: emCal(16, 36));
       margin-bottom: emCal(36, 40);
       @include mq(md) {
@@ -27,6 +29,7 @@
     p {
       @include typo($fsz: emCal(16, 18), $lh: emCal(16, 27));
       margin-bottom: emCal(18, 40);
+      color: #fff !important;
     }
     .form-wrapper {
       display: flex;
@@ -51,6 +54,7 @@
       }
       .btn {
         font-weight: 700;
+        color: #fff !important;
       }
     }
   }

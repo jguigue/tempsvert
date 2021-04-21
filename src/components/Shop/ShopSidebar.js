@@ -114,7 +114,7 @@ export default function ShopSidebar() {
           </div>
         </div>
         <div className="shop-sidebar__section">
-          <Link href={process.env.PUBLIC_URL + "/shop/fullwidth-4col"}>
+          <Link href={process.env.PUBLIC_URL + "/shop"}>
             <a className="shop-sidebar__section__banner">
               <img
                 src={

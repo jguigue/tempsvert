@@ -108,7 +108,7 @@ export default function Navigator() {
                   ))}
                 </ul>
                 <ul className="dropdown-menu__col -banner">
-                  <Link href="/shop/fullwidth-4col">
+                  <Link href="/shop">
                     <a>
                       <img
                         src="/assets/images/header/dropdown-menu-banner.png"

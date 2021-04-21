@@ -17,7 +17,12 @@ export default function () {
       </Breadcrumb>
       <div className="contact">
         <div className="container">
+          
           <div className="row">
+          <div className="col-12">
+              <p className="contact-text">Un avis, une recommandation où tout simplement une idée à nous suggérer ? N’hésitez pas à nous contacter ! Notre équipe vous répondra rapidement. </p>
+            </div>
+
             <div className="col-12 col-md-6">
               <h3 className="contact-title">Informations de contact</h3>
               {contactData &&
@@ -30,6 +35,7 @@ export default function () {
                   />
                 ))}
             </div>
+
             <div className="col-12 col-md-6">
               <h3 className="contact-title">Nous contacter</h3>
               <div className="contact-form">

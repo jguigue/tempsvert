@@ -15,7 +15,7 @@ export default function IntroductionFive() {
             released weekly.
           </h2>
           <Button
-            action={process.env.PUBLIC_URL + "/shop/fullwidth-4col"}
+            action={process.env.PUBLIC_URL + "/shop"}
             content="All news items"
             color="red"
           />

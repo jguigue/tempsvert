@@ -7,7 +7,7 @@ export default function IntroductionTen({ data }) {
         <div className="introduction-ten__wrapper">
           {data.map((item, index) => (
             <div key={index} className="introduction-ten__wrapper__item">
-              <Link href={process.env.PUBLIC_URL + "/shop/fullwidth-4col"}>
+              <Link href={process.env.PUBLIC_URL + "/shop"}>
                 <a className="introduction-ten__banner">
                   <img
                     src={process.env.PUBLIC_URL + item.background}

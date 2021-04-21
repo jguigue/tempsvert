@@ -2,17 +2,17 @@
   "accountLinks": [
     { "name": "Favoris", "to": "/shop/wishlist" },
     { "name": "Panier", "to": "/shop/cart" },
-    { "name": "Boutique", "to": "/shop/fullwidth-4col" },
+    { "name": "Boutique", "to": "/shop" },
     { "name": "Paiement", "to": "/shop/checkout" }
   ],
   "informationLinks": [
-    { "name": "À propos", "to": "/other/about" },
-    { "name": "Contact", "to": "/other/contact" },
-    { "name": "Mentions légales", "to": "/other/contact" },
-    { "name": "CGV", "to": "/other/contact" }
+    { "name": "À propos", "to": "/about" },
+    { "name": "Contact", "to": "/contact" },
+    { "name": "Mentions légales", "to": "/mentions" },
+    { "name": "CGV", "to": "/cgv" }
   ],
   "creditLinks": [
-    { "name": "Mentions Légales", "to": "/other/contact" },
-    { "name": "CGV", "to": "/other/contact" }
+    { "name": "Mentions Légales", "to": "/mentions" },
+    { "name": "CGV", "to": "/cgv" }
   ]
 }
