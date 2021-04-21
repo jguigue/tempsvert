@@ -2,21 +2,21 @@
   {
     "name": "2015",
     "description": "Le Temps Verts a été crée",
-    "videoPoster": "/assets/images/introduction/IntroductionTwo/1.png"
+    "videoPoster": "/assets/images/introduction/IntroductionTwo/1.webp"
   },
   {
     "name": "2017",
     "description": "Ouverture de notre première usine à Montanbourg.",
-    "videoPoster": "/assets/images/introduction/IntroductionTwo/2.png"
+    "videoPoster": "/assets/images/introduction/IntroductionTwo/2.webp"
   },
   {
     "name": "2018",
     "description": "Ouverture de la première boutique physique à Paris.",
-    "videoPoster": "/assets/images/introduction/IntroductionTwo/3.png"
+    "videoPoster": "/assets/images/introduction/IntroductionTwo/3.webp"
   },
   {
     "name": "2020",
     "description": "ouverture de notre deuxième boutique physique à Marseille",
-    "videoPoster": "/assets/images/introduction/IntroductionTwo/4.png"
+    "videoPoster": "/assets/images/introduction/IntroductionTwo/4.webp"
   }
 ]
